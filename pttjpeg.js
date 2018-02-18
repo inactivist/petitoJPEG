@@ -1277,7 +1277,7 @@
         } catch (e) {
             DEBUGMSG(sprintf("Caught exception: %s", e));
         }
-    } else if (typeof define != undefined && define.amd) {          //  Loaded with AMD /
+    } else if (typeof define != 'undefined' && define.amd) {          //  Loaded with AMD /
                                                                     //  RequireJS.
         define([], function() { return PTTJPEG; });
     } else if (typeof window != 'undefined') {                      //  Inside a regular web page,
